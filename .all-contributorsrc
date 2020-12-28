@@ -16,7 +16,8 @@
         "doc",
         "content",
         "ideas",
-        "maintenance"
+        "maintenance",
+        "projectManagement"
       ]
     },
     {
@@ -117,6 +118,39 @@
       "profile": "https://github.com/vedikaag99",
       "contributions": [
         "code"
+      ]
+    },
+    {
+      "login": "jackfrost13",
+      "name": "Rohit Agarwal",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/36669463?v=4",
+      "profile": "https://github.com/jackfrost13",
+      "contributions": [
+        "code",
+        "eventOrganizing",
+        "doc",
+        "content",
+        "ideas",
+        "maintenance",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "kanishkaa24",
+      "name": "Kanishka Aggarwal",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/71253790?v=4",
+      "profile": "https://www.linkedin.com/in/kanishka-aggarwal-255a51169/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Sloth-Panda",
+      "name": "Achyut Kumar Panda",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/70213384?v=4",
+      "profile": "https://github.com/Sloth-Panda",
+      "contributions": [
+        "doc"
       ]
     }
   ],
