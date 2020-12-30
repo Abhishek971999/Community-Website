@@ -16,13 +16,21 @@ This project aims to build the official site for the community page so that any 
 
 ## Tech Stack 🗃
 
- <img src="https://img.shields.io/badge/-MongoDB-yellow?style=flat&logo=mongoDB"> <img src="https://img.shields.io/badge/-expressJS-yellowgreen"> <img src="https://img.shields.io/badge/-ReactJS-%2300bfff%20">  <img src="https://img.shields.io/badge/-NodeJS-black?style=flat&logo=node.js">  
+ <img src="https://img.shields.io/badge/-MongoDB-yellow?style=flat&logo=mongoDB"> <img src="https://img.shields.io/badge/-expressJS-yellowgreen"> <img src="https://img.shields.io/badge/-ReactJS-%2300bfff%20">  <img src="https://img.shields.io/badge/-NodeJS-black?style=flat&logo=node.js"> 
+ 
+##  Getting Started 👨‍💻
+### Setup the repository to your local environment.
+
+1. `fork` the repository ,     Creates a replica of repository to your local environment.
+2. `git clone https://github.com/YOUR-USERNAME/Community-Website`   Download all files to your machine.
+3. `cd Community-Website`  move to the root directory.
 
 ## Frontend ⚛️
 
-Following are the steps to run the frontend of the community-website.
+Following are the steps to run the frontend of the community-website.All the code will go in `frontend` directory. 
 
-1. Navigate to `community-website` folder using `cd community-website`
+
+1. Navigate to `frontend` folder using `cd frontend`.
 2. Run `npm install`. It will install all the required packages and dependencies.
 3. Run `npm start` to run the server.
 4. Navigate to [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -30,6 +38,7 @@ Following are the steps to run the frontend of the community-website.
 ## Backend 💻
 
 All the backend code will go in the `backend` folder.
+
 
 1. Navigate to `backend` folder using `cd backend`
 2. Run `npm install`. It will install all the required packages and dependencies.
@@ -77,6 +86,12 @@ Thanks goes to these wonderful people ✨✨:
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/Sloth-Panda"><img src="https://avatars2.githubusercontent.com/u/70213384?v=4" width="100px;" alt=""/><br /><sub><b>Achyut Kumar Panda</b></sub></a><br /><a href="https://github.com/HITK-TECH-Community/Community-Website/commits?author=Sloth-Panda" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://aniketsingh98571.github.io/Web-Portfolio/"><img src="https://avatars3.githubusercontent.com/u/63097956?v=4" width="100px;" alt=""/><br /><sub><b>Aniket Singh</b></sub></a><br /><a href="https://github.com/HITK-TECH-Community/Community-Website/commits?author=aniketsingh98571" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/himanshu007-creator"><img src="https://avatars2.githubusercontent.com/u/65963997?v=4" width="100px;" alt=""/><br /><sub><b>himanshu007-creator</b></sub></a><br /><a href="#design-himanshu007-creator" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/SuNiL-Chau"><img src="https://avatars0.githubusercontent.com/u/46418190?v=4" width="100px;" alt=""/><br /><sub><b>Sunil Chaudhary</b></sub></a><br /><a href="#design-SuNiL-Chau" title="Design">🎨</a></td>
+    <td align="center"><a href="http://atharva-upadhye-01.github.io"><img src="https://avatars0.githubusercontent.com/u/70993547?v=4" width="100px;" alt=""/><br /><sub><b>Atharva Upadhye</b></sub></a><br /><a href="https://github.com/HITK-TECH-Community/Community-Website/commits?author=atharva-upadhye-01" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Sshivani-12"><img src="https://avatars0.githubusercontent.com/u/59923697?v=4" width="100px;" alt=""/><br /><sub><b>Shivani Wakde</b></sub></a><br /><a href="#design-Sshivani-12" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/sakshikhachane"><img src="https://avatars1.githubusercontent.com/u/53635792?v=4" width="100px;" alt=""/><br /><sub><b>Sakshi Khachane</b></sub></a><br /><a href="https://github.com/HITK-TECH-Community/Community-Website/commits?author=sakshikhachane" title="Code">💻</a></td>
   </tr>
 </table>
 
