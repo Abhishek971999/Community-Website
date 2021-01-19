@@ -12,6 +12,7 @@ import Admin from "./components/admin/admin";
 import Faqs from "./components/faq/faq";
 import Contact from "./components/contact/Design1";
 import NotFound from "./components/404/not_found";
+import Dashboard from "./components/admin/dashboard/dashboard";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import Terms from "./components/terms/terms";
@@ -36,11 +37,12 @@ const App = () => {
             <Route exact path="/resources" component={Resources} />
             <Route exact path="/contact-us" component={ContactUs} />
             <Route exact path="/faqs" component={Faqs} />
+            <Route exact path="/admin-dashboard" component={Dashboard} />
             <Route exact path="/admin" component={Admin} />
             <Route exact path="/contact" component={Contact} />
-            <Route exact path="/terms" component={Terms}/>
-            <Route exact path="/get-involved" component={GetInvolved}/>
-            <Route exact path="/privacy-policy" component={PrivacyPolicy}/>
+            <Route exact path="/terms" component={Terms} />
+            <Route exact path="/get-involved" component={GetInvolved} />
+            <Route exact path="/privacy-policy" component={PrivacyPolicy} />
             <Route component={NotFound} />
           </Switch>
         </Router>
