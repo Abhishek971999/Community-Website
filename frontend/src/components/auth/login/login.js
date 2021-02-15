@@ -1,4 +1,5 @@
-import React, { useReducer, useEffect } from "react";
+import React, { useReducer, useEffect, useState, useRef } from "react";
+import { Button2 } from "../../util/button/button";
 import styles from "./login.module.css";
 
 //state type
@@ -74,23 +75,14 @@ const Login = () => {
 
   // const classes = useStyles();
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [hidePassword, setHidePassword] = useState(false);
+  const passwordInput = useRef("password");
 
   useEffect(() => {
     // Show/Hide Functionality.
-    const togglePassword = document.querySelector("#togglePassword");
-    const password = document.querySelector("#password");
-    if (togglePassword) {
-      togglePassword.addEventListener("click", function (e) {
-        // toggle the type attribute
-        if (password) {
-          const type =
-            password.getAttribute("type") === "password" ? "text" : "password";
-          password.setAttribute("type", type);
-          // toggle the eye slash icon
-          this.classList.toggle("fa-eye-slash");
-        }
-      });
-    }
+    hidePassword
+      ? (passwordInput.current = "text")
+      : (passwordInput.current = "password");
 
     if (state.username.trim() && state.password.trim()) {
       dispatch({
@@ -103,7 +95,7 @@ const Login = () => {
         payload: true,
       });
     }
-  }, [state.username, state.password]);
+  }, [state.username, state.password, hidePassword]);
 
   const handleLogin = () => {
     if (state.username === "abc@email.com" && state.password === "password") {
@@ -162,7 +154,7 @@ const Login = () => {
                 placeholder="Username"
                 onChange={handleUsernameChange}
                 onKeyPress={handleKeyPress}
-                class="inputLogin"
+                className="inputLogin"
               />
               <i className="fas fa-user"></i>
             </div>
@@ -172,23 +164,26 @@ const Login = () => {
                 id="password"
                 required="required"
                 name="password"
-                type="password"
                 placeholder="Password"
                 onChange={handlePasswordChange}
                 onKeyPress={handleKeyPress}
-                class="inputLogin"
+                className="inputLogin"
+                type={passwordInput.current}
               />
-              <i className="far fa-eye" id="togglePassword"></i>
+              <i
+                className={hidePassword ? "fa fa-eye" : "fa fa-eye-slash"}
+                onClick={() => setHidePassword(!hidePassword)}
+              ></i>
             </div>
-            <div className={styles.loginInput} style={{ textAlign: "center" }}>
-              <button
+            <div className={styles.submitBtn}>
+              <Button2
                 id="btn"
-                className={`${styles.loginBtn} main-btn main-btn-2`}
+                label="Sign In"
+                type="submit"
+                className={styles.submitBtnText}
                 onClick={handleLogin}
                 disabled={state.isButtonDisabled}
-              >
-                Sign In
-              </button>
+              />
             </div>
           </div>
         </div>
